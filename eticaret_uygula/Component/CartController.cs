@@ -23,7 +23,7 @@ namespace eticaret_uygula.Component
                 CartItems = items,
                 GrandTotal = items.Sum(x => x.Quantity * x.Price)
             };
-            return View(cartvm);
+            return View(cartvm);  
         }
         public async Task<IActionResult> Add(int id)
         {
